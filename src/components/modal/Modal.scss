@@ -1,0 +1,38 @@
+.modal-overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparentize(#000, 0.4);
+
+  .modal {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 320px;
+    outline: none;
+    overflow-y: auto;
+    border-radius: 3px;
+    display: block;
+
+    .content {
+      position: relative;
+      background: #ffffff;
+      padding: 50px 30px 30px;
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #cccccc;
+        font-size: 26px;
+        cursor: pointer;
+      }
+    }
+  }
+}
